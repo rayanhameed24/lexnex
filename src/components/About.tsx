@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Target, Heart, Users, Zap, Play, Quote, Award, Lightbulb } from 'lucide-react';
+import Logo1 from "./assets/LExnex photoo.jpg";
 
 const About = () => {
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
@@ -120,7 +121,7 @@ const About = () => {
                       <div className=" bg-gradient-to-br from-cyan-900/20 to-purple-1000/20 flex items-center justify-center relative overflow-hidden">
                         {/* Image Instead of Video */}
                         <img
-                          src="src/components/assets/LExnex photoo.jpg"
+                          src={Logo1}
                           alt="Platform Introduction"
                           className="w-80px h-[450px]  transform group-hover:scale-105 transition-transform duration-700"
                         />

@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
+import Logo1 from "./assets/LExnex photoo.jpg";
 import {
   BookOpen,
   Brain,
@@ -772,7 +773,7 @@ const Hero = () => {
               <div className=" bg-gradient-to-br from-cyan-900/20 to-purple-1000/20 flex items-center justify-center relative overflow-hidden">
                 {/* Image Instead of Video */}
                 <img
-                  src="src/components/assets/LExnex photoo.jpg"
+                  src={Logo1}
                   alt="Platform Introduction"
                   className="w-80px h-[450px]  transform group-hover:scale-105 transition-transform duration-700"
                 />
