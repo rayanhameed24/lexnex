@@ -82,71 +82,56 @@ const About = () => {
         </div>
 
         {/* Founder's Message & Video Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
-          {/* Founder's Message */}
-          <div className="bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-xl rounded-3xl p-8 border border-cyan-500/20">
-            <div className="flex items-center mb-6">
-              <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-full flex items-center justify-center mr-4">
-                <Quote className="h-8 w-8 text-white" />
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold text-white">Founder's Message</h3>
-                <p className="text-cyan-400">Vision & Leadership</p>
-              </div>
-            </div>
-            
-            <blockquote className="text-gray-300 text-lg leading-relaxed mb-6 italic">
-              "Education is the most powerful weapon which you can use to change the world. At LawHub Pakistan, 
-              we're not just providing resources – we're building the foundation for Pakistan's legal future. 
-              Every note shared, every quiz taken, every student helped brings us closer to our vision of 
-              accessible, world-class legal education for all."
-            </blockquote>
-            
-            <div className="flex items-center">
-              <div className="w-12 h-12 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full mr-4"></div>
-              <div>
-                <div className="text-white font-bold">Muhammad Ahmad</div>
-                <div className="text-gray-400 text-sm">Founder & CEO</div>
-              </div>
-            </div>
-          </div>
-
-          {/* Video Introduction */}
-          <div className="relative bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-xl rounded-3xl overflow-hidden border border-cyan-500/20 group hover:border-cyan-400/50 transition-all duration-500">
-            <div className="aspect-video bg-gradient-to-br from-cyan-900/20 to-purple-900/20 flex items-center justify-center relative overflow-hidden">
-              {!isVideoPlaying ? (
-                <>
-                  <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/10 to-purple-500/10"></div>
-                  <button
-                    onClick={() => setIsVideoPlaying(true)}
-                    className="group/play relative z-10 w-20 h-20 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-full flex items-center justify-center hover:scale-110 transition-transform duration-300 shadow-2xl shadow-cyan-500/25"
-                  >
-                    <Play className="h-8 w-8 text-white ml-1" />
-                  </button>
-                  <div className="absolute inset-0 flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="text-white text-xl font-bold mb-2">Platform Introduction</div>
-                      <div className="text-gray-400">Watch our story unfold</div>
+                  <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
+                    {/* Founder's Message */}
+                    <div className="bg-gradient-to-br from-gray-900/50 to-black/50 backdrop-blur-xl rounded-3xl p-8 border border-cyan-500/20">
+                      <div className="flex items-center mb-6">
+                        <div className="w-16 h-16 bg-gradient-to-r from-cyan-500 to-purple-600 rounded-full flex items-center justify-center mr-4">
+                          <Quote className="h-8 w-8 text-white" />
+                        </div>
+                        <div>
+                          <h3 className="text-2xl font-bold text-white">
+                            Founder's Message
+                          </h3>
+                          <p className="text-left text-cyan-400">Vision & Leadership</p>
+                        </div>
+                      </div>
+        
+                      <blockquote className="text-gray-300 text-lg leading-relaxed mb-6 italic">
+                        "I created this website with the purpose of contributing
+                        something meaningful to society. Many students struggle to find
+                        proper notes and guidance in law, so I wanted to build a space
+                        where everything is available free of cost and easy to access. I
+                        hope this effort makes the learning journey smoother and opens
+                        the way for more students to achieve their goals in law."
+                      </blockquote>
+        
+                      <div className="flex items-center">
+                        <div className="w-12 h-12 bg-gradient-to-r from-cyan-400 to-purple-400 rounded-full mr-4"></div>
+                        <div>
+                          <div className="text-white font-bold">ALIAN HAMEED</div>
+                          <div className="text-left text-gray-400 text-sm">Founder</div>
+                        </div>
+                      </div>
+                    </div>
+        
+                    {/* Video Introduction */}
+                    <div className="relative bg-black backdrop-blur-xl rounded-3xl overflow-hidden border border-cyan-500/20 group hover:border-cyan-400/50 transition-all duration-500">
+                      <div className=" bg-gradient-to-br from-cyan-900/20 to-purple-1000/20 flex items-center justify-center relative overflow-hidden">
+                        {/* Image Instead of Video */}
+                        <img
+                          src="src/components/assets/LExnex photoo.jpg"
+                          alt="Platform Introduction"
+                          className="w-80px h-[450px]  transform group-hover:scale-105 transition-transform duration-700"
+                        />
+        
+                        {/* Overlay */}
+        
+                        {/* Text Over Image */}
+                        <div className="absolute inset-0 flex items-center justify-center"></div>
+                      </div>
                     </div>
                   </div>
-                </>
-              ) : (
-                <div className="w-full h-full bg-black flex items-center justify-center">
-                  <div className="text-white text-center">
-                    <div className="text-2xl font-bold mb-4">Video Coming Soon</div>
-                    <div className="text-gray-400">Our introduction video is in production</div>
-                    <button
-                      onClick={() => setIsVideoPlaying(false)}
-                      className="mt-4 px-6 py-2 bg-cyan-500 text-white rounded-lg hover:bg-cyan-600 transition-colors duration-300"
-                    >
-                      Close
-                    </button>
-                  </div>
-                </div>
-              )}
-            </div>
-          </div>
-        </div>
 
         {/* Why Choose Us */}
         <div className="bg-gradient-to-r from-gray-900/50 to-black/50 backdrop-blur-xl rounded-3xl p-12 border border-cyan-500/20">
