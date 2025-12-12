@@ -30,7 +30,7 @@ const ChatPage: React.FC = () => {
     setBotTyping(true);
 
     try {
-      const res = await fetch("https://lexnex.onrender.com", {
+      const res = await fetch("https://lexnex.onrender.com/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ session_id: sessionId, text: input }),
@@ -53,7 +53,7 @@ const ChatPage: React.FC = () => {
 
   const clearChat = async () => {
     try {
-      await fetch("https://lexnex.onrender.com", {
+      await fetch("https://lexnex.onrender.com/clear_chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ session_id: sessionId }),
